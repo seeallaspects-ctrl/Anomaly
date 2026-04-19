@@ -1,0 +1,29 @@
+{
+  "client_name": "Bluewater Pool Care LLC",
+  "google_sheet": {
+    "spreadsheet_id": "1SX5r2yJD7RpeHe6MhrE--vN3O6X1ipEwx27S5PvWTqk",
+    "url": "https://docs.google.com/spreadsheets/d/1SX5r2yJD7RpeHe6MhrE--vN3O6X1ipEwx27S5PvWTqk/edit",
+    "template_tab": {
+      "gid": 632661092,
+      "name": "Call Leads March 2026"
+    },
+    "tabs": {
+      "dashboard": {
+        "gid": 1528739661,
+        "name": "Dashboard"
+      },
+      "message_leads": {
+        "gid": 623386432,
+        "name": "Message Leads"
+      }
+    }
+  },
+  "schedule": {
+    "frequency": "daily",
+    "time": "06:00",
+    "timezone": "America/New_York"
+  },
+  "lsa": {
+    "account_id": "2502091782"
+  }
+}

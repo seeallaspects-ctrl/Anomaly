@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:docs.google.com)",
+      "WebFetch(domain:sheets.googleapis.com)",
+      "WebFetch(domain:developers.google.com)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -c \"\nfrom google.oauth2.credentials import Credentials\nfrom google.auth.transport.requests import Request\nfrom googleapiclient.discovery import build\n\ncreds = Credentials\\(\n    token=None,\n    refresh_token=''1//04Nnlxo-MLX8fCgYIARAAGAQSNwF-L9Ir_Uek2gU0fqBpaJJ1MKlwBeMkTgjA0upyem-4XbAJ4KJU4NjKwL3ZrIK09nk_Bgh4Ygc'',\n    token_uri=''https://oauth2.googleapis.com/token'',\n    client_id=''256051421326-bhku5ma0s61fdcao3r6uuhq0s9jajln6.apps.googleusercontent.com'',\n    client_secret=''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'',\n    scopes=[''https://www.googleapis.com/auth/spreadsheets'']\n\\)\ncreds.refresh\\(Request\\(\\)\\)\nprint\\(''Access token obtained successfully''\\)\n\nsheets = build\\(''sheets'', ''v4'', credentials=creds\\)\nresult = sheets.spreadsheets\\(\\).values\\(\\).get\\(\n    spreadsheetId=''1SX5r2yJD7RpeHe6MhrE--vN3O6X1ipEwx27S5PvWTqk'',\n    range=\"\"''Call Leads March 2026''!A1:K1\"\"\n\\).execute\\(\\)\nprint\\(''Sheet connection SUCCESS''\\)\nprint\\(''Headers:'', result.get\\(''values'', []\\)\\)\n\")",
+      "Bash(python3 -c \"\nfrom google.oauth2.credentials import Credentials\nfrom google.auth.transport.requests import Request\nfrom googleapiclient.discovery import build\n\ncreds = Credentials\\(\n    token=None,\n    refresh_token=''1//04Nnlxo-MLX8fCgYIARAAGAQSNwF-L9Ir_Uek2gU0fqBpaJJ1MKlwBeMkTgjA0upyem-4XbAJ4KJU4NjKwL3ZrIK09nk_Bgh4Ygc'',\n    token_uri=''https://oauth2.googleapis.com/token'',\n    client_id=''256051421326-bhku5ma0s61fdcao3r6uuhq0s9jajln6.apps.googleusercontent.com'',\n    client_secret=''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'',\n    scopes=[''https://www.googleapis.com/auth/spreadsheets'']\n\\)\ncreds.refresh\\(Request\\(\\)\\)\n\nsheets = build\\(''sheets'', ''v4'', credentials=creds\\)\nresult = sheets.spreadsheets\\(\\).values\\(\\).get\\(\n    spreadsheetId=''1SX5r2yJD7RpeHe6MhrE--vN3O6X1ipEwx27S5PvWTqk'',\n    range=\"\"''Call Leads March 2026''!A1:Z1\"\"\n\\).execute\\(\\)\nheaders = result.get\\(''values'', [[]]\\)[0]\nfor i, h in enumerate\\(headers\\):\n    col_letter = chr\\(65 + i\\)\n    print\\(f''Column {col_letter}: \"\"{h}\"\"''\\)\n\")",
+      "Bash(python3:*)",
+      "WebSearch",
+      "WebFetch(domain:services.google.com)",
+      "WebFetch(domain:api.apis.guru)",
+      "WebFetch(domain:googleapis.dev)",
+      "WebFetch(domain:groups.google.com)",
+      "WebFetch(domain:docs.rs)",
+      "Bash(pip3 list:*)",
+      "Bash(source:*)",
+      "Bash(curl:*)",
+      "Bash(ls:*)"
+    ]
+  }
+}
